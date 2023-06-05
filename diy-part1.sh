@@ -16,3 +16,9 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+chmod 755 -R files/user/bin/mlnet
+cp $GITHUB_WORKSPACE/.vermagic ./
+cp -f $GITHUB_WORKSPACE/kernel-defaults.mk ./include/
+cp -f $GITHUB_WORKSPACE/Makefile ./package/kernel/linux/
+cp -f $GITHUB_WORKSPACE/config-5.10 ./target/linux/x86/
