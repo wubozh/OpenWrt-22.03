@@ -21,4 +21,4 @@ chmod 755 -R files/user/bin/mlnet
 cp $GITHUB_WORKSPACE/.vermagic ./
 cp -f $GITHUB_WORKSPACE/kernel-defaults.mk ./include/
 cp -f $GITHUB_WORKSPACE/Makefile ./package/kernel/linux/
-#cp -f $GITHUB_WORKSPACE/config-5.10 ./target/linux/x86/
+cp -f $GITHUB_WORKSPACE/config-5.10 ./target/linux/x86/
